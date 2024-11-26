@@ -31,6 +31,7 @@
   width: 100vw;
   position: relative; /* Ensure floating names are positioned correctly */
   background-image: url("../image.jfif");
+  background-size: cover;
 }
 
 .box {

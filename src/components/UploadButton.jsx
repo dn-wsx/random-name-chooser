@@ -12,11 +12,13 @@ const UploadButton = ({ onUpload }) => {
     if (file) {
       const reader = new FileReader();
       reader.onload = (e) => {
-        const content = e.target.result;
-        const names = content.split(",");
+        const arrayBuffer = e.target.result;
+        const decoder = new TextDecoder("windows-1252");
+        const content = decoder.decode(arrayBuffer);
+        const names = content.split(",").map((name) => name.trim());
         onUpload(names);
       };
-      reader.readAsText(file, "UTF-8");
+      reader.readAsArrayBuffer(file);
     }
   };
 
