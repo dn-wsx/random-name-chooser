@@ -1,0 +1,30 @@
+.floating_names {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none; /* Ensure floating names don't interfere with form interaction */
+}
+
+.floating_name {
+  position: absolute;
+  animation: float 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes float {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
