@@ -27,7 +27,9 @@ function App() {
 
   const getRandomNames = (n) => {
     const shuffled = [...names].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, n);
+    const selectedWinners = shuffled.slice(0, n);
+    setNames(names.filter((name) => !selectedWinners.includes(name)));
+    return selectedWinners;
   };
 
   return (

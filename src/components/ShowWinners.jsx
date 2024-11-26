@@ -12,14 +12,14 @@ const ShowWinners = ({ winners, onBack }) => {
       const timeout = setTimeout(() => {
         setVisibleWinners((prev) => [...prev, winner]);
         if (index === winners.length - 1) {
-          setTimeout(() => setShowBackButton(true), 3000); // Show the back button 3 seconds after the last winner
+          setTimeout(() => setShowBackButton(true), 3000);
         }
       }, index * 3000);
       timeouts.push(timeout);
     });
 
     return () => {
-      timeouts.forEach(clearTimeout); // Clear all timeouts on cleanup
+      timeouts.forEach(clearTimeout);
     };
   }, [winners]);
 

@@ -16,7 +16,7 @@ const UploadButton = ({ onUpload }) => {
         const names = content.split(",");
         onUpload(names);
       };
-      reader.readAsText(file, "UTF-8"); // Ensure UTF-8 encoding
+      reader.readAsText(file, "UTF-8");
     }
   };
 
