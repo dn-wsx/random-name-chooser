@@ -1,4 +1,4 @@
-/* @import url(https://db.onlinewebfonts.com/c/edc380e4a87771841ad89ef3ab65d7a8?family=LomoCopy+LT+Std+Midi);
+@import url(https://db.onlinewebfonts.com/c/edc380e4a87771841ad89ef3ab65d7a8?family=LomoCopy+LT+Std+Midi);
 @font-face {
   font-family: "LomoCopy LT Std Midi";
   src: url("https://db.onlinewebfonts.com/t/edc380e4a87771841ad89ef3ab65d7a8.eot");
@@ -12,15 +12,15 @@
       format("truetype"),
     url("https://db.onlinewebfonts.com/t/edc380e4a87771841ad89ef3ab65d7a8.svg#LomoCopy LT Std Midi")
       format("svg");
-} */
+}
 
 * {
   padding: 0;
   margin: 0;
-  /* font-family: "LomoCopy LT Std Midi"; */
-  font-family: "Century Gothic", CenturyGothic;
+  font-family: "LomoCopy LT Std Midi";
+  /* font-family: "Century Gothic", CenturyGothic; */
   font-size: 1.25rem;
-  color: #fff;
+  color: #000;
 }
 
 .black {
@@ -29,9 +29,9 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  position: relative; /* Ensure floating names are positioned correctly */
-  background-image: url("../image.jfif");
-  background-size: cover;
+  position: relative;
+  /* background-image: url("../image.jfif"); */
+  /* background-size: cover; */
 }
 
 .box {
