@@ -17,10 +17,11 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "LomoCopy LT Std Midi";
-  /* font-family: "Century Gothic", CenturyGothic; */
+  /* font-family: "LomoCopy LT Std Midi"; */
+  font-family: "Century Gothic", CenturyGothic;
   font-size: 1.25rem;
-  color: #000;
+  /* color: #000; */
+  color: #fff;
 }
 
 .black {
@@ -30,15 +31,15 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  /* background-image: url("../image.jfif"); */
-  /* background-size: cover; */
+  background-image: url("../image.jfif");
+  background-size: cover;
 }
 
 .box {
   width: 90%;
   height: 90%;
   border-radius: 50px;
-  position: relative; /* Ensure floating names are positioned correctly */
+  position: relative;
 }
 
 .form {
@@ -48,8 +49,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative; /* Ensure form is centered */
-  z-index: 1; /* Ensure form is above floating names */
+  position: relative;
+  z-index: 1;
 }
 
 .input_number {
@@ -79,4 +80,18 @@ button {
 
 #number {
   color: #000;
+}
+
+.winners_container {
+  position: relative;
+}
+
+.error_message {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  width: 100%;
 }
