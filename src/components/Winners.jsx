@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Winners = ({ getRandomNames, names, onShowWinners }) => {
-  const [numberOfWinners, setNumberOfWinners] = useState(0);
+  const [numberOfWinners, setNumberOfWinners] = useState();
   const [error, setError] = useState("");
 
   const handleSubmit = (event) => {

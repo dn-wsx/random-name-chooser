@@ -14,7 +14,7 @@ const ShowWinners = ({ winners, onBack }) => {
         if (index === winners.length - 1) {
           setTimeout(() => setShowBackButton(true), 3000);
         }
-      }, index * 3000);
+      }, index * 2000);
       timeouts.push(timeout);
     });
 

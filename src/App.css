@@ -31,7 +31,8 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  background-image: url("../image.jfif");
+  /* background-image: url("../image.jfif"); */
+  background-image: url("../BG_3.jpg");
   background-size: cover;
 }
 
